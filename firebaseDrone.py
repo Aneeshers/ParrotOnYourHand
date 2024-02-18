@@ -17,21 +17,13 @@ action_ref = db.reference('action')
 
 def control_drone(action, value):
     if action == "left":
-        drone(
-            moveBy(0, -value, 0, 0) >> FlyingStateChanged(state="hovering", _timeout=5)
-        ).wait()
+        drone(moveBy(0, -value, 0, 0))
     elif action == "right":
-        drone(
-            moveBy(0, value, 0, 0) >> FlyingStateChanged(state="hovering", _timeout=5)
-        ).wait()
+        drone(moveBy(0, value, 0, 0))
     elif action == "up":
-        drone(
-            moveBy(0, 0, -value, 0) >> FlyingStateChanged(state="hovering", _timeout=5)
-        ).wait()
+        drone(moveBy(0, 0, -value, 0))
     elif action == "down":
-        drone(
-            moveBy(0, 0, value, 0) >> FlyingStateChanged(state="hovering", _timeout=5)
-        ).wait()
+        drone(moveBy(0, 0, value, 0))
     elif action == "land":
         drone(Landing()).wait().success()
 
