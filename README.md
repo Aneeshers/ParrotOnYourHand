@@ -11,7 +11,7 @@
 ## Implementation
 - I use Core Motion from Apple WatchOS to derive and record hand gestures -- rotate right (across pitch axis) to move right, rotate left (across pitch axis) to move left, move hand up (rotate up on roll axis) to move the drone up. Tap the land button to land the drone.
 
-- We then route these commands to Firebase using the low-level networking libraries from Apple Watch (note this was particularly difficult as Apple Watch supposedly no longer supports Firebase Realtime Database ([link to issue](https://firebase.google.com/docs/ios/learn-more))). We pilot our Parrot drone via the Olympe SDK -- which connects to our Firebase Realtime Database and listens to actions from the Apple Watch.
+- I then route these commands to Firebase using the low-level networking libraries from Apple Watch (note this was particularly difficult as Apple Watch supposedly no longer supports Firebase Realtime Database ([link to issue](https://firebase.google.com/docs/ios/learn-more))). I pilot the Parrot drone via the Olympe SDK -- which connects to our Firebase Realtime Database and listens to actions from the Apple Watch.
 
 ## Usage
 1. Install Olympe ([link to original API reference](https://developer.parrot.com/docs/olympe/index.html))
