@@ -15,7 +15,7 @@
 
 ## Usage
 1. Install Olympe ([link to original API reference](https://developer.parrot.com/docs/olympe/index.html))
-2. Install Firebase_admin ([original](https://pypi.org/project/firebase-admin/)) and set up a Firebase Realtime Database ([original](https://firebase.google.com/docs/database)
+2. Install Firebase_admin ([original](https://pypi.org/project/firebase-admin/)) and set up a Firebase Realtime Database ([tutorial](https://firebase.google.com/docs/database))
 3. Get the correct service account JSON file and change here:  
    ```python
    cred_path = ''
