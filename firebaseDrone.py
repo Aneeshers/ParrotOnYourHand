@@ -34,7 +34,7 @@ def control_drone(action, value):
         ).wait()
 
 def listener(event):
-    action_value = event.data
+    action_value = event.data["action"]
     action, value = action_value.split()
     value = float(value)
     print(f'Action: {action}, Value: {value}')
