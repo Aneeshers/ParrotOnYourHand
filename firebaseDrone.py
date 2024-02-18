@@ -8,10 +8,11 @@ from olympe.messages.ardrone3.PilotingState import FlyingStateChanged
 DRONE_IP = "10.202.0.1"
 drone = olympe.Drone(DRONE_IP)
 
-cred_path = 'watchdrone-dfe04-firebase-adminsdk-4hm2l-a0ec3ab47e.json'
+cred_path = ''
+databaseURL = 'https://watchdrone-dfe04-default-rtdb.firebaseio.com/'
 cred = credentials.Certificate(cred_path)
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://watchdrone-dfe04-default-rtdb.firebaseio.com/'
+    'databaseURL': databaseURL
 })
 action_ref = db.reference('action')
 
