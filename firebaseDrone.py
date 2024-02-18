@@ -32,6 +32,8 @@ def control_drone(action, value):
         drone(
             moveBy(0, 0, value, 0) >> FlyingStateChanged(state="hovering", _timeout=5)
         ).wait()
+    elif action == "land":
+        drone(Landing()).wait().success()
 
 def listener(event):
     action_value = event.data["action"]
