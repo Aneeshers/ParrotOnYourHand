@@ -32,5 +32,3 @@
 
 7. Then run `python3 firebaseDrone.py`
 ```
-
-Replace `image-link-here`, `gif-link-here`, `video-link-here`, `issue-link-here`, `olympe-link-here`, and `firebase-admin-link-here` with the appropriate URLs and file paths. This version should provide a clearer layout for your project's README.
